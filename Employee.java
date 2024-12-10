@@ -1,52 +1,52 @@
-package day11;
+package day14;
 
-public class Employee {
-	private String Empname;
-	private int Empid;
-	private int Empage;
-	private String EmpDep;
-	
-	
-	public Employee() {
-		
-		}
-	public Employee(String Empname,int Empid,int Empage,String EmpDep) {
-		this.Empname=Empname;
-		this.Empid=Empid;
-		this.Empage=Empage;
-		this.EmpDep=EmpDep;
-		
-		}
-	public void setEmpname(String Empname) {
-		this.Empname=Empname;
+public class Employee
+{
+   private String EmpName;
+   private String Department;
+   private int id;
+   private long PhoneNo;
+   
+   
+   public Employee() 
+   {
+   }
+	   public Employee(String EmpName,String Department,long PhoneNo,int id) {
+			this.EmpName=EmpName;
+			this.Department=Department;
+			this.id=id;
+			this.PhoneNo=PhoneNo;
+   }
+	public String getEmpName() {
+		return EmpName;
 	}
-		public void setEmpid(int Empid) {
-			this.Empid=Empid;
-		}
-		public void setEmpage(int Empage) {
-			this.Empage=Empage;
-		}
-		public void setEmpDep(String EmpDep) {
-			this.EmpDep=EmpDep;
-		}
-		
-		public String getEmpname() {
-			return Empname;
-		}
-		public int getEmpid() {
-			return Empid;
-		}
-		public int getEmpage() {
-			return Empage;
-		}
-		public String getEmpDep() {
-			return EmpDep;
+	public void setEmpName(String empName) {
+		EmpName = empName;
 	}
-		public String toString() {
-			return"your Name:"+Empname+"\n your Empage:"+Empage+"\n your Empid:"+Empid+"\n your EmpDep:"+EmpDep;
-		
-					
-		}}
-
-
-
+	public String getDepartment() {
+		return Department;
+	}
+	public void setDepartment(String department) {
+		Department = department;
+	}
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	public long getPhoneNo() {
+		return PhoneNo;
+	}
+	public void setPhoneNo(Long PhoneNo) {
+		this.PhoneNo = PhoneNo;
+	}
+	@Override
+	public String toString() {
+		return "Employee [EmpName=" + EmpName + ", Department=" + Department + ", id=" + id + ", PhoneNo=" + PhoneNo
+				+ "]";
+	}
+	   
+	   
+}
